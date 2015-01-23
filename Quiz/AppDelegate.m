@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {	
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ViewController *quizVC = [[ViewController alloc] init];
+    self.window.rootViewController = quizVC;
+    
+    
 	
 	self.window.backgroundColor = [UIColor whiteColor];
 	[self.window makeKeyAndVisible];
